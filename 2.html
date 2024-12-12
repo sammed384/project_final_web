@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: #fffafa;
+    font-family: "Poppins", serif;
+}
+/* img{
+    width: 100%;
+} */
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+  
+     .btn{
+        /* border: 1px solid red; */
+        background-color: #ed563b;
+        border: none;
+        color: white; 
+        padding: 0.625rem;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+  
+   
+ 
+    
+    
+    
+    .footer{
+        display: flex;
+        /* justify-content: space-around; */
+        margin-bottom: 3rem;
+    }
+    .form{
+        width: 100%;
+        /* height: 100%; */
+        
+        background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .map{
+        /* width: 100%; */
+        /* width: 100%; */
+        height: 100%;
+        
+    }
+    .a{
+    background-color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    }
+    
+    .a input,textarea{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+    
+    }
+    .a input,textarea:focus{
+        outline: none;
+    }
+   
+    
+    /* Media queries */
+    
+    /*For mobile  */
+    @media (max-width: 767px) {
+       
+        .footer{
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+           
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+        }
+        .map{
+             margin-right: 200px;
+        }
+        
+        .a{
+            padding: 1rem; 
+            margin: 2rem;
+    
+            
+            }
+        .a input,textarea{
+            padding: 0.5rem;
+            width: 100%;
+        }
+    
+       
+    }
+    
+</head>
+<body>
+    <section>
+        <div class="footer">
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999522.9381395306!2d41.30764689671755!3d11.812970501079601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1622d46734f9f601%3A0x1472bba7ef0f5b88!2sDjibouti!5e0!3m2!1sfr!2sdj!4v1733213310115!5m2!1sfr!2sdj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="form">
+                <form class="a">
+                <input type="text" placeholder="Your Name*" required>
+                <input type="email" placeholder="Your Email*" required><br>
+                <input type="text" placeholder="Subject"><br>
+                <textarea name="message" cols="60" rows="10" placeholder="Message"></textarea><br>
+                <button class="btn">Send message</button>
+               
+            </form>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

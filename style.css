@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: #fffafa;
+    font-family: "Poppins", serif;
+}
+/* img{
+    width: 100%;
+} */
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+header{
+    height: 4.563rem;
+    width: 100%;
+    /* background-color: rgba(76, 152, 10, 0.7); */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(64, 73, 83, 0.4);
+
+    position: sticky;
+    top: 0;
+    
+
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(16, 16, 1, 0.7); */
+    padding: 15px;
+    /* position: sticky;
+    top: 0; */
+    /* z-index: 100; */
+}
+.nav-bar .logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+ .btn{
+    /* border: 1px solid red; */
+    background-color: #ed563b;
+    border: none;
+    color: white; 
+    padding: 0.625rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nav-bar .logo span{
+    /* color: #d45f65; */
+    color: #ed563b;
+}
+span{
+    color: #d8464d;
+}
+.nav-bar .menu{
+    display: flex;
+    gap: 1.25rem;
+    
+}
+
+.nav-bar .menu li{
+    list-style: none;
+    padding: 0.4rem;
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.nav-bar .menu li a{
+    color: #fcfafa;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-bar .menu li a:hover{
+    /* background-color: red; */
+    color: #d45f65;
+
+}
+
+.hero{
+    /* ajouter depuis chatgpt */
+    position: relative;
+    overflow: hidden;
+    /*  */
+    height: 100vh;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    background-color: #d45f65;
+    
+}
+/*  */
+/* Video Background */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+/*  */
+/*  */
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+/*  */
+
+/*  */
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+/*  */
+.hero h3{
+    color: #fcfafa;
+    text-transform: uppercase;
+    padding-bottom: 1.25rem;
+    /* 19px=1.188rem */
+    font-size: 1.188rem;
+    line-height: 1.813rem;
+    font-weight: bold;
+
+
+}
+.hero h1{
+    color: #fcfafa;
+    text-transform: uppercase;
+    font-size: 4.125rem;
+    font-weight: 900;
+    padding-bottom:0.625rem ;
+}
+
+.program{
+    /* height: 90vh; */
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.program img{
+    width: 2.813rem;
+    height: 0.938rem;
+}
+.sa{
+    background-color: #97e77c;
+}
+
+.program h2{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 800;
+    
+}
+.program p{
+    color: #7a7a7a;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+    text-align: center;
+}
+
+.boxes{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px;
+ margin-bottom: 4rem;
+}
+
+.box{
+    display: flex;
+    gap: 1.875rem;
+}
+
+boxes2{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    /* justify-content: space-around; */
+}
+
+.box2{
+    /* width: 50%; */
+    display: flex;
+  
+    border: none;
+    margin: 1.563rem;
+    border-radius: 0 4px 8px 0 rgba(50, 40, 40, 0.8);
+}
+/* .img_text{
+    width: 50%;
+} */
+ .box img{
+    width: 6.25rem;
+    height: 6.25rem;
+ }
+
+.box-text h3{
+color: #232d39;
+    text-transform: uppercase;
+    font-size: 1.188rem;
+    font-weight: 600;
+}
+
+.box-text p{
+    color: #7a7a7a;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+}
+.box-text a{
+    color: #ed563b;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+.box-text a span{
+    color: rgb(255, 0, 0) !important;
+}
+
+.heros{
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    background-color: #d45f65;
+    height: 50vh;
+    width:100%;
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 0 auto; */
+    /* padding: 0 100px; */
+   
+}
+.heros h1{
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.heros p{
+    font-size: 1.188rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+    text-align: center;
+}
+
+.training_class{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+}
+.aside{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.img_text{
+    width: 60%;
+    /* margin-top: 100px; */
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.icon_text{
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.icon_text img{
+    width: 2.188rem;
+    height: 2.188rem;
+}
+.icon_text h3{
+    font-size: 1.188rem;
+    font-weight: 600;
+    color: #232d39;
+}
+.icon_text btn{
+    background-color: #ed563b;
+    border: none;
+    color: white; 
+    padding: 0.625rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.img_text h3{
+    font-size: 1.438rem;
+    font-weight: 700;
+    color: #232d39;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img_text img{
+    width: 43.75rem;
+    height: 18.578rem;
+}
+.img_text p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-bottom: 1rem;
+}
+.program2{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.program2 img{
+    width: 2.813rem;
+    height: 0.938rem;
+}
+.program2 h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 4rem;
+    /* margin-bottom: 4rem; */
+    
+}
+.program2 p{
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.563rem;
+    text-align: center;
+}
+.img_background{
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.tableau,td{
+    border-collapse: collapse;
+    padding: 3rem;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ffffff;
+    margin-bottom: 4rem;
+    font-size: 0.813rem;
+    font-weight: 500;
+    color: #ffffff;
+  
+}
+ 
+ul{
+    display: flex;
+    gap: 1.25rem;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: #d45f65;
+}
+.cards{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.card{
+    box-shadow: 0 6px 15px rgba(10, 0, 0, 0.1);
+    padding: 2.5rem;
+}
+.card img{
+    width: 16.875rem;
+    height: 12.802rem;
+}
+.card h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ed563b;
+    margin-top: 0.6rem;
+}
+.card h3{
+    font-size: 1.188rem;
+    font-weight: 600;
+    color: #232d39;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.card p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #7a7a7a;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center;
+    margin-top: 50px; */
+}
+.social-icons a {
+    /* color: #000; */
+    color: #232d39;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #0077b5; /* Change the color on hover */
+}
+
+.footer{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 3rem;
+}
+.form{
+    width: 50%;
+    /* height: 100%; */
+    
+    background-image: url("https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    
+    width: 50%;
+}
+.a{
+background-color: #ffffff;
+margin: 1rem;
+padding: 1rem;
+border-radius: 0.5rem;
+}
+
+.a input,textarea{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+
+}
+.a input,textarea:focus{
+    outline: none;
+}
+footer{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 3rem;
+}
+
+footer a{
+    color: #f2733b;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Media queries */
+
+/*For mobile  */
+@media (max-width: 767px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .program p{
+        text-align: center;
+        margin: 10px;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+        
+       }
+       .box{
+        width: 100%;
+       }
+       .heros{
+        text-align: center;
+       }
+       .training_class{
+        
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center;
+         */
+         /* margin-left: 1.5rem; */
+     
+       }
+       .btn{
+        margin-left: 0.5rem;
+       }
+       .aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5.5rem;
+        
+    }
+    .aside{
+        margin-left: 5.5rem;
+    }
+    .icon_text{
+        margin-bottom: 20px;
+        margin-left: 100px;
+        width: 300px;
+        padding: 20px;
+    }
+    .icon_text,.btn{
+        padding: 20px;
+        width: 300px;
+       
+    }
+    .img_text{
+        margin-left: 1.5rem;
+
+    }
+    .img_text img{
+        width: 350px;
+        height: 148.625px;
+    }
+
+    .program2 p{
+      text-align: center;
+      margin: 10px;
+    }
+
+    .tb ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .tableau,td{
+    
+        padding:12px;
+        margin: 20px;
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .footer{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+       
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        /* margin-right: 70px */
+        
+    }
+    iframe{
+        width: 380px;
+        height: 450px;
+    }
+    .form{
+        width: 380px;
+    }
+    
+    
+    .a{
+        padding: 1rem; 
+        margin: 2rem;
+
+        
+        }
+    .a input,textarea{
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    footer{
+        margin-bottom: 4rem;
+    }
+
+   
+}
+
+/* For tablettes */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
