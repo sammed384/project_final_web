@@ -11,6 +11,7 @@ body{
     font-family: "Poppins", serif;
 }
 
+<<<<<<< HEAD
 header{
     height: 4.563rem;
     width: 100%;
@@ -21,11 +22,14 @@ header{
     z-index: 10;
 }
 
+=======
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
 .container{
     max-width: 1120px;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 
 
 /*  */
@@ -34,6 +38,22 @@ header{
     display: none;
 }
 
+=======
+header{
+    height: 4.563rem;
+    width: 100%;
+    background-color: rgba(64, 73, 83, 0.4);
+    position: sticky;
+    top: 0;
+}
+
+/*  */
+/* Mobile menu hidden by default */
+.mobile-menu {
+    display: none;
+}
+
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
 
 
 .hamburger {
@@ -102,7 +122,10 @@ span{
     justify-content: center;
     align-items: center;
     background-color: #d45f65;
+<<<<<<< HEAD
     z-index: 1;
+=======
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
 }
 /*  */
 /* Video Background */
@@ -499,19 +522,30 @@ footer a{
         justify-content: center;
         align-items: center;
         position: absolute;
+<<<<<<< HEAD
         position: fixed;
         top: 1%;
+=======
+        top: 5%;
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
         right: 5%;
         z-index: 99999;
         color: #fff;
         font-size: 30px;
+<<<<<<< HEAD
         background-color: #4d527c;
+=======
+        background-color: #5f6ad4;
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
         border-radius: 50%;
         width: 50px;
         height: 50px;
         cursor: pointer;
         transition: background-color 300ms ease, transform 300ms ease;
+<<<<<<< HEAD
         z-index: 10001;
+=======
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
     }
 
     .hamburger:hover {
@@ -520,11 +554,19 @@ footer a{
     }
 
     /* Show and hide icons based on data-visible */
+<<<<<<< HEAD
     .hamburger i[data-visible="false"] {
         display: block;
     }
 
     .hamburger i[data-visible="true"] {
+=======
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
         display: none;
     }
 
@@ -541,10 +583,15 @@ footer a{
         transition: transform 360ms ease-in-out;
     }
 
+<<<<<<< HEAD
     .mobile-menu[data-visible="false"] {
         transform: translateX(0%);
         visibility: visible;
         opacity: 1;
+=======
+    .mobile-menu[data-visible="true"] {
+        transform: translateX(0%);
+>>>>>>> 70cca4f508028e4fc76cfb4deb4d406107ef0c12
     }
 
     .mobile-menu .navigation {
