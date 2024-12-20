@@ -5,14 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> -->
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
 <body>
     <header>
+        <!--  -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" data-visible="false"></i>
+            <i class="fa-solid fa-close" data-visible="true"></i>
+        </div>
+        <nav class="mobile-menu" data-visible="true">
+            <div class="navigation">
+                <h1 class="logo">Training <span>Studio</span></h1>
+                <ul class="menu">
+                    <li><a href="#home"><span>HOME</span></a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#classes">CLASSES</a></li>
+                    <li><a href="#schedules">SCHEDULES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <button class="btn">SIGN UP</button>
+            </div>
+        </nav>
+       <!--  -->
 
         <nav class="nav-bar container">
             <h1 class="logo">Training <span>Studio</span></h1>
@@ -26,6 +46,7 @@
             </ul>
 
         </nav>
+       
     </header>
     <main>
         <div class="hero">
@@ -132,30 +153,30 @@
                 <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br>ipsum dolor, ultricies
                     fermentum massa consequat eu.</p>
             </div>
-            <div class="training_class">
-                <div class="aside">
-                    <div class="icon_text">
-                        <div>
-                        <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
-                            alt="icon1"></div>
-                        <div>
-                        <div> <h3>First Training Class</h3></div>
-                    </div>
-                    </div>
-                    <div class="icon_text">
-                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon2">
-                <div><h3>Second Training Class</h3></div>
-                </div>
-                <div class="icon_text">
-                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon3">
-                <div><h3>Third Training Class</h3></div>
-                </div>
-                <div class="icon_text">
-                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon4">
-                    <div><h3>Four Training Class</h3></div>
-                </div>
-                <button class="btn">view all schedules</button>
-                </div>
+                <div class="training_class">
+                        <div class="aside">
+                                <div class="icon_text">
+                                        <div>
+                                        <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+                                            alt="icon1"></div>
+                                        <div>
+                                        <div> <h3>First Training Class</h3></div>
+                                    </div>
+                                </div>
+                                 <div class="icon_text">
+                                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon2">
+                                <div><h3>Second Training Class</h3></div>
+                                </div>
+                                <div class="icon_text">
+                                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon3">
+                                <div><h3>Third Training Class</h3></div>
+                                </div>
+                                <div class="icon_text">
+                                    <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png" alt="icon4">
+                                    <div><h3>Four Training Class</h3></div>
+                                </div>
+                            <button class="btn">view all schedules</button>
+                        </div>
                 <div class="img_text">
                     <img src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/training-image-01.jpg" alt="image">
                     <h3>First Training Class</h3>
@@ -307,7 +328,7 @@
 
     </main>
     <footer>
-        <p>Copyright &copy 2020 Training Studio - Designed by <a href="#">Samatar</a></p>
+        <p>Copyright &copy 2024 Training Studio - Designed by <a href="#">Samatar</a></p>
     </footer>
 
     <script src="scrpit.js"></script>
